@@ -1,2 +1,16 @@
-# daily-commit-137
-My one hundred and thirty-seventh daily GitHub activity repository
+def transpose_matrix(matrix):
+    return [list(row) for row in zip(*matrix)]
+
+if __name__ == "__main__":
+    matrix = [
+        [1, 2, 3],
+        [4, 5, 6]
+    ]
+
+    print("Original matrix:")
+    for row in matrix:
+        print(row)
+
+    print("\nTransposed matrix:")
+    for row in transpose_matrix(matrix):
+        print(row)
